@@ -25,3 +25,9 @@ jobs:
       - store_artifacts:
           path: report.html
           destination: test-report
+
+workflows:
+  version: 2
+  test-workflow:
+    jobs:
+      - test
